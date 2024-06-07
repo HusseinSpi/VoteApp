@@ -1,0 +1,1 @@
+mongodb+srv://huseeink852:YqEW36JWjv2Vc8Mv@cluster0.izvm3dd.mongodb.net/

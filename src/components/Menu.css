@@ -1,0 +1,36 @@
+.sidebar {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.showSidebar {
+  background-color: #fff;
+  height: 100vh;
+  width: 25%;
+}
+
+.white {
+  color: #fff;
+}
+
+.sidebar .btn {
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.links {
+  font-size: 25px;
+}
+
+.link {
+  margin: 30px;
+}
+
+.link span {
+  color: black;
+  cursor: pointer;
+}

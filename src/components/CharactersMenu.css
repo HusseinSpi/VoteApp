@@ -1,0 +1,10 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+.Character-menu {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
