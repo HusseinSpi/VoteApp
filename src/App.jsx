@@ -3,8 +3,8 @@ import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import Menu from "./components/Menu";
 import { ChangePage } from "./Hook/ChangePage";
-import { Login } from "./components/Login";
-import { Vote } from "./Page/Vote";
+import { LoginPage } from "./Page/LoginPage";
+import { Vote } from "./Page/VotePage";
 
 const App = () => {
   const { currentPage, handleChangePage } = ChangePage();
@@ -13,7 +13,7 @@ const App = () => {
     <main>
       <Menu handleChangePage={handleChangePage} />
       <ToastContainer position="top-center" />
-      {currentPage === 1 ? <Vote /> : <Login />}
+      {currentPage === 1 ? <Vote /> : <LoginPage />}
     </main>
   );
 };

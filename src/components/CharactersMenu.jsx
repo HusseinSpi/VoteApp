@@ -1,24 +1,8 @@
-import { useState, useEffect } from "react";
-import { fetchData } from "../Hook/Fetch";
+import characters from "../data/charactersData";
 import { Character } from "./Character";
 import "./CharactersMenu.css";
 
 export const CharactersMenu = () => {
-  const [characters, setCharacters] = useState([]);
-
-  useEffect(() => {
-    async function fetchCharacters() {
-      try {
-        const data = await fetchData();
-        setCharacters(data);
-        console.log(data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    }
-    fetchCharacters();
-  }, []);
-
   const bgColors = [
     "rgba(151, 206, 228, 0.5)",
     "rgba(84, 154, 14, 0.5)",
@@ -30,7 +14,8 @@ export const CharactersMenu = () => {
     <ul className="Character-menu">
       {characters.map((character, index) => (
         <Character
-          key={index}
+          key={character.id}
+          id={character.id}
           name={character.name}
           urlImg={character.img}
           initialVote={character.vote}
